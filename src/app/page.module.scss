@@ -1,0 +1,97 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 30px;
+    min-height: 100vh;
+
+    .source {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        justify-content: center;
+        align-items: center;
+
+        a {
+            text-decoration: underline;
+            text-underline-offset: under;
+            color: green;
+        }
+    }
+
+    p.description {
+        font-size: 22px;
+        width: 50%;
+        text-align: center;
+
+        @media screen and (max-width: 1000px) {
+            width: 75%;
+        }
+        @media screen and (max-width: 600px) {
+            width: 100%;
+        }
+    }
+
+    .artistGrid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 30px;
+        row-gap: 30px;
+
+        @media screen and (min-width: 1000px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @media screen and (min-width: 1370px) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        .card {
+            max-width: 800px;
+            width: 100%;
+            height: fit-content;
+            display: flex;
+            gap: 30px;
+            border: 2px solid black;
+            padding: 30px;
+            border-radius: 10px;
+
+            @media screen and (max-width: 500px) {
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 15px;
+                padding: 10px;
+            }
+
+            figure {
+                width: 150px;
+                height: 150px;
+                position: relative;
+                border-radius: 100%;
+                overflow: hidden;
+
+                @media screen and (max-width: 500px) {
+                    width: 100px;
+                    height: 100px;
+                }
+
+                img {
+                    object-fit: contain;
+                }
+            }
+
+            div {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+
+                @media screen and (max-width: 500px) {
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}
