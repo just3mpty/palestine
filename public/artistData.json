@@ -52,5 +52,11 @@
         "description": "Covers",
         "profile": "https://x.com/rokleam",
         "image": "/artists/leam.jpg"
+    },
+    {
+        "name": "Chamalo_mp4",
+        "description": "Graphiste",
+        "profile": "https://t.co/t34gPO9dT7",
+        "image": "/artists/chamalo.jpg"
     }
 ]
